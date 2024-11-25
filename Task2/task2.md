@@ -1,0 +1,4 @@
+## Task 2 - Different package sizes
+To achieve task 2, each package now has a size included in it: {package, PackageId, PackageSize}.
+Besides that, the truck evaluates whether the package can fit within its remaining capacity, if the package fits, it's loaded, and the remaining capacity is updated. If it doesn't fit, the truck is dispatched, and the package is handed back to the conveyor.
+When a truck is full, it is dispatched, and the conveyor starts a new truck. The conveyor ensures the rejected package (due to insufficient space) is attempted to be loaded onto the new truck.Trucks now track their remaining capacity along with the packages they carry.
